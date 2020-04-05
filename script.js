@@ -1,4 +1,3 @@
-//33309240064
 function tikrinkViska(event){
     event.preventDefault();
     let kodas = document.getElementById("kodas").value;
