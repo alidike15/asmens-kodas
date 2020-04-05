@@ -4,11 +4,6 @@ function tikrinkViska(event){
     let skaiciai = kodas.split("");
     let ilgis = kodas.toString().length;
 
-    console.log(Number.isInteger(parseInt(kodas)));
-    console.log(skaiciai);
-    console.log(ilgis);
-    console.log(kodas);
-
     function kiekSkaitmenu(){
         //patikrina ar skaitmenų yra 11
         if(ilgis == 11){
@@ -34,7 +29,6 @@ function tikrinkViska(event){
         }else if(skaiciai[0]==9){
             return true;
         }else{
-            console.log("pirmas");
             return false;
         }
         
@@ -46,7 +40,6 @@ function tikrinkViska(event){
         if(skaiciai[3] == 0 || skaiciai[3]== 1){
             return true;
         }else{
-            console.log("ketvirtas");
             return false;
         }
     }
@@ -63,7 +56,6 @@ function tikrinkViska(event){
         }else if (skaiciai[3] == 0 && skaiciai[4]>=0 && skaiciai[4]<=9){
             return true;
         }else{
-            console.log("penktas");
             return false;
         }
     }
@@ -74,12 +66,10 @@ function tikrinkViska(event){
             return true;
         }else if(skaiciai[4] == 2 && skaiciai[5] == 3){
             //vasario mėnesį 6 skaitmuo nebus 3, nes vasaris turi tik 29 dienas
-            console.log("sestas vasaris");
             return false;
         }else if (skaiciai[4] !== 2 && skaiciai[5] == 3){
             return true;
         }else{
-            console.log("sestas");
             return false;
         }
     }
@@ -98,7 +88,6 @@ function tikrinkViska(event){
         }else if (liekana2 == 10 && skaiciai[10] == 0){
             return true;
         }else{
-            console.log("vienuoliktas");
             return false;
         }
     }
