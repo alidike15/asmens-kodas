@@ -99,7 +99,6 @@ function tikrinkViska(event){
         }else if(kiekSkaitmenu() == false){
             alert("Asmens kodas turi būti 11 skaitmenų");
         }else{
-            console.log("galutinis");
             alert("Neteisingas asmens kodas!");
         }
     }
